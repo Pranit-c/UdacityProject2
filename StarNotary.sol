@@ -17,7 +17,7 @@ contract StarNotary is ERC721 {
     string private _pik; // Symbol of the token
 
     // Constructor to set the name and symbol
-    constructor(string memory name_, string memory symbol_) {
+    constructor(string memory name_, string memory symbol_) ERC721(name_, symbol_){
         _pickle = name_;
         _pik = symbol_;
     }
