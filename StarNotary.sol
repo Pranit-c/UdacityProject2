@@ -13,22 +13,22 @@ contract StarNotary is ERC721 {
     }
 
     // Task 1: Add name and symbol properties
-    string private _nam;   // Name of the token
-    string private _symb; // Symbol of the token
+    string private _pickle;   // Name of the token
+    string private _pik; // Symbol of the token
 
     // Constructor to set the name and symbol
     constructor(string memory name_, string memory symbol_) {
-        _nam = name_;
-        _symb = symbol_;
+        _pickle = name_;
+        _pik = symbol_;
     }
 
     // Getter functions for name and symbol
     function name() public view virtual override returns (string memory) {
-        return _nam;
+        return _pickle;
     }
 
     function symbol() public view virtual override returns (string memory) {
-        return _symb;
+        return _pik;
     }
 
     // mapping the Star with the Owner Address
